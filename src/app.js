@@ -13,32 +13,32 @@ export default class App extends LightningElement {
       {
         acid: "erin@accenture.com",
         label: "Erin",
-        icon: "utility:edit",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
       {
         acid: "karan@accenture.com",
         label: "Karan",
-        icon: "utility:refresh",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
       {
         acid: "ray@accenture.com",
         label: "Ray",
-        icon: "utility:brush",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
       {
         acid: "shoel@accenture.com",
         label: "Shoel",
-        icon: "utility:brush",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
       {
         acid: "jessica@accenture.com",
         label: "Jessica",
-        icon: "utility:brush",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
       {
         acid: "liam@accenture.com",
         label: "Liam",
-        icon: "utility:brush",
+        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
       },
     ];
   }
