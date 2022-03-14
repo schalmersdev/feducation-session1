@@ -1,5 +1,9 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track, api, wire } from "lwc";
+
 
 export default class Fed extends LightningElement {
+
+  @api name;
+  @api introduction;
   
 }
