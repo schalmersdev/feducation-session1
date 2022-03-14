@@ -1,7 +1,7 @@
 import { LightningElement } from "lwc";
 
 export default class App extends LightningElement {
-  title = "Welcome to Lightning Web Components!";
+  title = "Feducation Session 1 | LWC - The basics";
 
   showFeds = true;
 
@@ -13,32 +13,32 @@ export default class App extends LightningElement {
       {
         acid: "erin@accenture.com",
         label: "Erin",
-        icon: "utility:edit",
+        icon: "jessica.png",
       },
       {
         acid: "karan@accenture.com",
         label: "Karan",
-        icon: "utility:refresh",
+        icon: "karan.png",
       },
       {
         acid: "ray@accenture.com",
         label: "Ray",
-        icon: "utility:brush",
+        icon: "ray.png",
       },
       {
         acid: "shoel@accenture.com",
         label: "Shoel",
-        icon: "utility:brush",
+        icon: "shoel.png",
       },
       {
         acid: "jessica@accenture.com",
         label: "Jessica",
-        icon: "utility:brush",
+        icon: "jessica.png",
       },
       {
         acid: "liam@accenture.com",
         label: "Liam",
-        icon: "utility:brush",
+        icon: "liam.png",
       },
     ];
   }

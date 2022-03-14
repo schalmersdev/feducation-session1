@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/app.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "App",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Welcome to Lightning Web Components!\""
+            },
+            {
+              "kind": "field",
+              "name": "showFeds",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "feds",
+              "description": "Getter for the features property"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "App",
+            "module": "src/app.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/child.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Show an item",
+          "name": "Child",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Child",
+            "module": "src/child.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/fed.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Fed",
+          "members": [
+            {
+              "kind": "field",
+              "name": "name"
+            },
+            {
+              "kind": "field",
+              "name": "introduction"
+            }
+          ],
+          "superclass": {
+            "name": "LightningElement",
+            "package": "lwc"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Fed",
+            "module": "src/fed.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.stories.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "story"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "story",
+          "declaration": {
+            "name": "story",
+            "module": "src/index.stories.js"
+          }
+        }
+      ]
+    }
+  ]
+}
