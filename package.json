@@ -1,6 +1,6 @@
 {
   "name": "@wcd/schalmersdev.lwc-l0q46egp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "serve": "npx wcd-cli@latest serve Je5YBPwwcZ8UHPHeGA3y --open"
   }
