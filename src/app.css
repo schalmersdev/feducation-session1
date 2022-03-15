@@ -6,7 +6,7 @@ p {
     color: rgb(62, 62, 60);
 }
 .app {
-    background-color: #fafaf9;
+    background-color: #fff;
     height: 100vh;
     overflow: scroll;
 }

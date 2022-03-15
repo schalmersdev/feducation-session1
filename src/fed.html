@@ -6,9 +6,9 @@
     <h2 class="slds-text-heading_large">{name}</h2>
     <p>{introduction}</p>
 
-    <ul class="slds-list_horizontal slds-has-dividers_left">
+    <ul class="slds-list_vertical slds-m-top_large">
       <template for:each={skills} for:item='skill' for:index="index">
-        <li class="slds-item" key={skill.index}>{skill}</li>
+        <li class="slds-item slds-text-title slds-text-color_success" key={skill.index}>{skill}</li>
       </template>
     </ul>
 

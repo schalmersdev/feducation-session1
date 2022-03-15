@@ -13,13 +13,6 @@ export default class App extends LightningElement {
   get feds() {
     const allFeds = [
       {
-        acid: "erin@accenture.com",
-        label: "Erin",
-        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
-        introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css', 'aem', 'angular'],
-      },
-      {
         acid: "karan@accenture.com",
         label: "Karan",
         icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
@@ -29,14 +22,14 @@ export default class App extends LightningElement {
       {
         acid: "ray@accenture.com",
         label: "Ray",
-        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
+        icon: "https://i.ibb.co/1RZvqK5/emoji-2.png",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
         skills: ['angular'],
       },
       {
         acid: "shoel@accenture.com",
         label: "Shoel",
-        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
+        icon: "https://i.ibb.co/q5hpFZD/emoji-4.png",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
         skills: ['jquery'],
       },
@@ -53,6 +46,13 @@ export default class App extends LightningElement {
         icon: "https://i.ibb.co/VB7xRYT/liam.png",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
         skills: ['react', 'css', 'aem'],
+      },
+      {
+        acid: "erin@accenture.com",
+        label: "Erin",
+        icon: "https://i.ibb.co/WDXrz16/emoji-1.png",
+        introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
+        skills: ['react', 'css', 'aem', 'angular'],
       },
     ];
 
