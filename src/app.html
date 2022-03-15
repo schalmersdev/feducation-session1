@@ -1,17 +1,13 @@
 <template>
 	<div class="app slds-p-around_x-large">
-		<h1 class="slds-text-heading_large">{title}</h1>
-		<h3>Write JavaScript, HTML, and CSS code, and preview the output in the interactive code editor.</h3>
+		<h1 class="slds-text-heading_large slds-m-bottom_medium">{title}</h1>
+		<h2>Use this tool to find a matching Front end developer</h2>
 
 		<!-- Using an if statement -->
 		<template if:true={showFeds}>
 			<div class="slds-p-top_large">
-
-
 				<div class="">
 					<h3 class="slds-text-heading_small">FED Filter skill match</h3>
-					<p class="slds-text-body_regular">The following examples show various ways to create an input search
-						component.</p>
 				</div>
 				<div onkeyup={handleKeyUp}>
 					<lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search">
@@ -23,19 +19,12 @@
 
 				<!-- Using a for statement -->
 				<template for:each={feds} for:item='fed'>
-					<c-fed key={fed.acid} name={fed.label} icon={fed.icon} introduction={fed.introduction}></c-fed>
+					<c-fed key={fed.acid} name={fed.label} icon={fed.icon} introduction={fed.introduction} skills={fed.skills}>
+					</c-fed>
 				</template>
+
 			</div>
 		</template>
-
-
-
-
-		<h2 class="slds-text-heading_medium slds-p-top_large">Resources</h2>
-		<a href="https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.get_started_introduction">
-			Developer Guide
-		</a><br/>
-		<a href="https://developer.salesforce.com/docs/component-library/overview/components">Component Reference</a>
 
 	</div>
 </template>

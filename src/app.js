@@ -1,65 +1,70 @@
 import { LightningElement } from "lwc";
 
 export default class App extends LightningElement {
-  title = "Welcome to Lightning Web Components!";
+  title = "Find a FED";
 
   showFeds = true;
+  matchingFeds = 0;
   queryTerm;
 
   /**
    * Getter for the features property
    */
   get feds() {
-    return [
+    const allFeds = [
       {
         acid: "erin@accenture.com",
         label: "Erin",
         icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css'],
+        skills: ['react', 'css', 'aem', 'angular'],
       },
       {
         acid: "karan@accenture.com",
         label: "Karan",
         icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['css', 'angular'],
+        skills: ['scrum', 'agile'],
       },
       {
         acid: "ray@accenture.com",
         label: "Ray",
         icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css', 'angular'],
+        skills: ['angular'],
       },
       {
         acid: "shoel@accenture.com",
         label: "Shoel",
         icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css', 'angular'],
+        skills: ['jquery'],
       },
       {
         acid: "jessica@accenture.com",
         label: "Jessica",
-        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
+        icon: "https://i.ibb.co/8KTQ4LL/jessica.jpg",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css', 'angular'],
+        skills: ['react', 'css', 'aem'],
       },
       {
         acid: "liam@accenture.com",
         label: "Liam",
-        icon: "https://i.ibb.co/qBVNYy5/karan.jpg",
+        icon: "https://i.ibb.co/VB7xRYT/liam.png",
         introduction: "Going steadily at Australian Defence Force, styling some AEM adaptive forms, building some prototype UI in AEM with React-Bootstrap, learning how to write unit testing with Jest and providing UI support in Pega",
-        skills: ['react', 'css', 'angular'],
+        skills: ['react', 'css', 'aem'],
       },
     ];
+
+    //this.matchingFeds = allFeds.filter(item => item.skills.includes(this.queryTerm)).length;
+
+    return this.queryTerm ? allFeds.filter(item => item.skills.includes(this.queryTerm)) : allFeds;
   }
 
   handleKeyUp(evt) {
-      const isEnterKey = evt.keyCode === 13;
-      if (isEnterKey) {
+      //const isEnterKey = evt.keyCode === 13;
+      //if (isEnterKey) {
           this.queryTerm = evt.target.value;
-      }
+      //}
   }
 }

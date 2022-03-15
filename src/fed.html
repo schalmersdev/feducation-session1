@@ -2,11 +2,15 @@
   <div class="fed slds-m-bottom_x-large">
     <div class="fed-avatar">
       <img alt={name} src={icon} />
-      <!--<span class="slds-avatar slds-avatar_circle slds-avatar_large">
-        <img alt={name} src={icon} />
-      </span>-->
     </div>
     <h2 class="slds-text-heading_large">{name}</h2>
     <p>{introduction}</p>
+
+    <ul class="slds-list_horizontal slds-has-dividers_left">
+      <template for:each={skills} for:item='skill' for:index="index">
+        <li class="slds-item" key={skill.index}>{skill}</li>
+      </template>
+    </ul>
+
   </div>
 </template>
