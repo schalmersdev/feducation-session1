@@ -1,14 +1,24 @@
 <template>
 	<div class="app slds-p-around_x-large">
-		<h1 class="slds-text-heading_large slds-m-bottom_medium">{title}</h1>
-		<h2>Use this tool to find a matching Front end developer</h2>
+
+		<template if:false={showFeds}>
+			<h1 class="slds-text-heading_large slds-m-bottom_medium">{title}</h1>
+			<h2 class="slds-m-bottom_medium">Use this tool to find a matching resource</h2>
+
+			<!-- Here we are using the -->
+			<lightning-button onclick={showSearch} variant="brand" label="Start the search for the perfect fit">
+			</lightning-button>
+
+		</template>
 
 		<!-- Using an if statement -->
 		<template if:true={showFeds}>
+			<!-- Here we are using the -->
+			<lightning-button onclick={hideSearch} variant="brand" label="Back home">
+			</lightning-button>
 			<div class="slds-p-top_large">
-				<div class="">
-					<h3 class="slds-text-heading_small">FED Filter skill match</h3>
-				</div>
+				<h1 class="slds-text-heading_large">FED Filter skill match</h1>
+
 				<div onkeyup={handleKeyUp}>
 					<lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search">
 					</lightning-input>
