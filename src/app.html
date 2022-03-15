@@ -6,11 +6,24 @@
 		<!-- Using an if statement -->
 		<template if:true={showFeds}>
 			<div class="slds-p-top_large">
-				<h2 class="slds-text-heading_medium">Our FEDS</h2>
+
+
+				<div class="">
+					<h3 class="slds-text-heading_small">FED Filter skill match</h3>
+					<p class="slds-text-body_regular">The following examples show various ways to create an input search
+						component.</p>
+				</div>
+				<div onkeyup={handleKeyUp}>
+					<lightning-input name="enter-search" label="Search when user hits the 'enter' key" type="search">
+					</lightning-input>
+				</div>
+				<p if:true={queryTerm}>
+					Searched for {queryTerm}!
+				</p>
 
 				<!-- Using a for statement -->
 				<template for:each={feds} for:item='fed'>
-					<c-fed key={fed.acid} name={fed.label} icon={fed.icon} introduction="Hello world I am erin"></c-fed>
+					<c-fed key={fed.acid} name={fed.label} icon={fed.icon} introduction={fed.introduction}></c-fed>
 				</template>
 			</div>
 		</template>

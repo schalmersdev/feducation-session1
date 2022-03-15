@@ -1,7 +1,12 @@
 <template>
-  <span class="slds-avatar">
-    <img alt="Person name" src={icon} title="User avatar" />
-  </span>
-  <h1 class="slds-text-heading_large">{name}</h1>
-  <p>{introduction}</p>
+  <div class="fed slds-m-bottom_x-large">
+    <div class="fed-avatar">
+      <img alt={name} src={icon} />
+      <!--<span class="slds-avatar slds-avatar_circle slds-avatar_large">
+        <img alt={name} src={icon} />
+      </span>-->
+    </div>
+    <h2 class="slds-text-heading_large">{name}</h2>
+    <p>{introduction}</p>
+  </div>
 </template>
